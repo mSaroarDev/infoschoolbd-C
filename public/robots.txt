@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /login
+Allow: /admission
+Allow: /about-us
+Allow: /services
+Allow: /pricing
+Allow: /contact
+Allow: /blogs
+Allow: /terms
+Allow: /refund-policy
+
+Sitemap: https://infoschoolbd.com/sitemap.xml

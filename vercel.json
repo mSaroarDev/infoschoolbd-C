@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/:match(.*)",
+        "destination": "https://digiskill-v2-backend.vercel.app/api/:match"
+      }
+    ]
+  }

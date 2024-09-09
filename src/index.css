@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base */
+body {
+  @apply text-[17px] bangla-font;
+  /* font-family: "Noto Serif Bengali", serif; */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+main {
+  @apply w-full max-w-6xl mx-auto;
+}
+
+/*  */
+
+/* font register */
+@font-face {
+  font-family: solaiman-lipi;
+  src: url("/fonts/SolaimanLipi.woff2");
+}
+
+@font-face {
+  font-family: ador-noirit;
+  src: url("/fonts/LiAdorNoirrit.woff2");
+}
+
+@font-face {
+  font-family: helvetica;
+  src: url("/fonts/HelveticaNeueRoman.woff2");
+}
+
+.font-ador-noirit {
+  font-family: "ador-noirit", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nunito-regular {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.nunito-medium {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.nunito-semibold {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.nunito-bold {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+/* google fonts */
+.bangla-font {
+  font-family: "solaiman-lipi", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px !important;
+}
+
+/* google fonts */
+.bangla-font2 {
+  font-family: "solaiman-lipi", serif;
+}
+
+/* inter font */
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+/* hind siliguri */
+.hind-siliguri-light {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hind-siliguri-regular {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hind-siliguri-medium {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hind-siliguri-semibold {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hind-siliguri-bold {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* poppins */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* form and input */
+
+label {
+  @apply w-full inline-block font-bold mb-1 italic text-[17px];
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  @apply w-full px-4 border border-borderColor rounded text-[17px] !important;
+}
+
+file {
+  @apply mt-2 block w-full file:mr-4 file:rounded-md file:border-0 file:bg-teal-500 file:py-2 file:px-4 file:text-sm file:font-semibold file:text-white hover:file:bg-teal-700 focus:outline-none disabled:pointer-events-none disabled:opacity-60 !important;
+}
+
+/* buttons */
+.button-main {
+  @apply bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition-all duration-300;
+}
+
+.button-dark {
+  @apply bg-[#292929] px-4 py-2 rounded text-white;
+}
+
+.user-sidebar-link {
+  @apply w-full px-3 md:px-6 py-2  hover:bg-lightBg flex items-center gap-3 font-bold border-0 md:border-l-[3px] md:border-white md:border-b-0 border-borderColor;
+}
+
+.user-sidebar-link-active {
+  @apply md:border-l-[3px] md:border-blue-600 text-blue-600 bg-blue-600/5;
+}
+
+/* modal css */
+.modal-box {
+  width: 100%;
+  max-width: 550px;
+  margin: auto auto;
+  border-radius: 12px;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff !important;
+  z-index: 9999;
+}
+
+.f-input {
+  @apply file-input file-input-bordered file-input-sm w-full max-w-xs !important;
+}
+
+.list ul li {
+  @apply ml-7;
+}
+
+/* home design */
+.navbar-wrapper {
+  @apply py-3;
+}
+
+.navbar-links a {
+  @apply mx-1 px-3 py-2 text-[16px] font-bold whitespace-nowrap;
+}
+
+.navbar-links a:hover {
+  @apply border-b-2 border-blue-600 transition-all duration-150;
+}
+
+.navbar-link-active {
+  @apply border-b-2 border-blue-600 transition-all duration-150;
+}
+
+.hero_section {
+  background-image: url("/hero-main-1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section_header {
+  @apply text-center text-[30px] font-bold relative mb-10 flex items-center justify-center;
+}
+
+.section_header::before {
+  content: "";
+  background-color: #f03d7a; /* Adjust color as needed */
+  height: 2px;
+  width: 80px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%; /* Position at the center of the container */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.recomended_batch {
+  position: absolute;
+  content: "Recomended";
+  height: 10px;
+  width: 40px;
+  background: #f03d7a;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  @apply bg-white; /* Set the background color to black */
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300; /* Set the scrollbar thumb color to white */
+  border-radius: 10px;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* sweeat alert 2 */
+div:where(.swal2-container) h2:where(.swal2-title) {
+  font-size: 22px !important;
+  @apply poppins-regular;
+}
+
+div:where(.swal2-container) .swal2-html-container {
+  font-size: 18px !important;
+  @apply poppins-regular;
+}
+
+/* styles.module.css */
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Move up by 10px */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.image-container {
+  animation: moveUpDown 2s infinite; /* Adjust the animation duration as needed */
+}
+
+/* swal 2 buttons */
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm),
+div:where(.swal2-container) button:where(.swal2-styled) {
+  @apply poppins-semibold;
+}

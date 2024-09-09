@@ -1,0 +1,7 @@
+{
+  "DEPLOYPATH": "/home/user/git_repo",
+  "task": {
+    "0": "index.php",
+    "1": "images"
+  }
+}
